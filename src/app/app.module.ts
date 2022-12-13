@@ -8,6 +8,13 @@ import { LoginComponent } from './Admin/login/login.component';
 import { DasboardComponent } from './Admin/dasboard/dasboard.component';
 import { AcceuilComponent } from './Admin/dasboard/acceuil/acceuil.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +22,19 @@ import { AcceuilComponent } from './Admin/dasboard/acceuil/acceuil.component';
     LoginComponent,
     DasboardComponent,
     AcceuilComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

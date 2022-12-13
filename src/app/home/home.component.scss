@@ -1,0 +1,65 @@
+.divmere{
+  margin: 0;
+  height: 99%;
+  width: 100%;
+  background-color: green;
+
+}
+
+.content{
+  height: 100%;
+  // margin: 3%;
+  display: grid;
+  grid-template-columns: 67% 31% ;
+  column-gap: 2%;
+  border-radius: 15px;
+  background-color: white;
+}
+
+// premiere partie .........................................................................................
+.firstPart{
+  display: grid;
+  grid-template-rows: 45% 53%;
+  row-gap: 2%;
+}
+
+// ///////.1.1 premiere ligne
+.firstRow1{
+  display: grid;
+  grid-template-columns: 48% 50% ;
+  column-gap: 2%;
+}
+.titreDescription{
+  background-color: aquamarine;
+}
+.image{
+  border-radius: 15px;
+}
+
+.image > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+// ///////.1.2 deuxieme ligne
+.secaindRow1{
+  display: grid;
+  grid-template-columns: 40% 58% ;
+  column-gap: 2%;
+}
+
+.part1{
+  background-color:rebeccapurple ;
+
+}
+
+.part2{
+  background-color:rgb(51, 107, 153) ;
+
+}
+// seconde partie .........................................................................................
+.secaindPart{
+  background-color: red;
+}
