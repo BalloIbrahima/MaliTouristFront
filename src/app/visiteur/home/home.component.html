@@ -4,22 +4,88 @@
     <div class="firstPart">
       <div class="firstRow1">
         <div class="titreDescription">
-          <p>home titre! 1.1</p>
+          <div class="titre" >
+            <label id="mali">Le MALI</label>
+          <label for="kankou moussa">En 1339, <a href="https://fr.wikipedia.org/wiki/Angelino_Dulcert">Angelino Dulcert</a>, cartographe de la très réputée école majorquine de cartographie, signale le Mali sur l'un des tout premiers portulans <a href="https://fr.wikipedia.org/wiki/Mali">connus10...</a><br>
+            Le Pays de <b>Kankou Moussa ...</b></label>
+          </div>
 
+          <div id="description">
+            <label>Avec comme drapeau <a style="color: green;" >Vert</a> <a style="color: #FCD211;"> Jaune</a> <a style="color: red;"> Rouge, <br></a>
+              Le Mali, en forme longue la république du Mali, est un État d'Afrique de l'Ouest, frontalier de la Mauritanie à l'ouest, de l'Algérie au nord-nord-est, du Niger à l'est, du Burkina Faso et de la Côte d'Ivoire au sud-sud-ouest, de la Guinée au sud-ouest et du Sénégal à l'ouest-sud-ouest.
+              Avec la decoupation administratrive, le Mali a <a style="color: red;cursor:pointer">19 regions</a>  plus la capitale <b>Bamako.<br></b>
+              Decouvez le Mali...<br>
+              Le Pays de <b>Kankou Moussa ...</b>
+            </label>
+          </div>
         </div>
-        <div class="image">
-          <img height="auto" src="assets/images/mli1.jpeg" alt="mli"/>
+        <div id="carouselExampleControls" class="carousel slide image" data-ride="carousel">
 
+          <div class="carousel-inner">
+            <div class="carousel-item image active">
+              <img height="auto" src="assets/images/mli3.jpeg" alt="mli"/>
+            </div>
+            <div class="carousel-item image">
+              <img height="auto" src="assets/images/mli5.jpeg" alt="mli"/>
+            </div>
+            <div class="carousel-item image">
+              <img height="auto" src="assets/images/mli12.jpeg" alt="mli"/>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
 
       <div class="secaindRow1">
         <div class="part1">
-          <p>home titre! 1.1</p>
+          <ul>
+            <li>
+              Superficie : 1,24 million km²
+            </li>
+            <li>Population : 20,86 millions (2021)</li>
+            <li>Langue officielle : Français</li>
+            <li>Devise : Franc CFA</li>
+            <li> Capitale : Bamako</li>
+            <li>Date de fondation : 22 septembre 1960</li>
+            <li></li>
+            <li></li>
+          </ul>
 
         </div>
         <div class="part2">
-          <p>home desc! 1.1</p>
+          <label for="commentaire">Dites nous ce qui vous plait du Mali :</label>
+          <div class="formulaire">
+            <form action="" method="post" #f2="ngForm">
+              <div class="form">
+                <!--<div class="form-floating mb-3">
+                  <label>Dites nous ce qui vous plait u Mali :</label>
+                </div>-->
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username" placeholder="Nom complet" required>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" [(ngModel)]="email" name="email" id="email" placeholder="Adresse email" required>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea type="description" class="form-control" [(ngModel)]="description" name="description" id="description" placeholder="Message" required>
+                  </textarea>
+                </div>
+                <div class="form-floating mb-3">
+                  <button  class="btn btn-success" [disabled]="f2.form.invalid" (click)="sendComment(f2)">Envoyer</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
 
         </div>
 
@@ -28,9 +94,20 @@
     </div>
 
     <div class="secaindPart">
-      <p>home works! hello</p>
+      <p>Avis </p>
+      <p>200 avis </p>
+
 
     </div>
   </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Malitourist</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 </div>

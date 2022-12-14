@@ -2,13 +2,14 @@
   //margin: 0;
   height: 100%;
   margin: 3% 10% 0 10%;
-    //width: 100%;
-  background-color: green;
-
+  //width: 100%;
+  margin-bottom: 0;
 }
 
 .content{
   height: 100%;
+  margin-bottom: 2%;
+
   // margin: 3%;
   display: grid;
   grid-template-columns: 67% 31% ;
@@ -31,7 +32,27 @@
   column-gap: 2%;
 }
 .titreDescription{
-  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 40% 55%;
+  row-gap: 5%;
+}
+
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mali{
+  font-size: 50px;
+  margin: auto;
+  font-weight: bold;
+}
+
+#description{
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  border: 3px solid #FCD211;
 }
 .image{
   border-radius: 15px;
@@ -52,15 +73,21 @@
 }
 
 .part1{
-  background-color:rebeccapurple ;
+  padding: 2%;
+  border-radius: 5px;
+  border: 2px solid lightgray;
 
 }
 
 .part2{
   background-color:rgb(51, 107, 153) ;
+  padding: 5%;
 
 }
 // seconde partie .........................................................................................
 .secaindPart{
-  background-color: red;
+  // background-color: #D00822;
+  border-radius: 5px;
+  padding: 4%;
+  border: 2px solid #D00822;
 }
