@@ -1,0 +1,44 @@
+<section class="ftco-section">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Mali Tourist</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto mr-md-3">
+            <li class="nav-item active"><a href="#" class="nav-link">Acceuil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Regions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+  </div>
+</section>
+
+<script>
+  (function($) {
+
+    "use strict";
+
+    $('nav .dropdown').hover(function(){
+      var $this = $(this);
+      $this.addClass('show');
+      $this.find('> a').attr('aria-expanded', true);
+      $this.find('.dropdown-menu').addClass('show');
+    }, function(){
+      var $this = $(this);
+        $this.removeClass('show');
+        $this.find('> a').attr('aria-expanded', false);
+        $this.find('.dropdown-menu').removeClass('show');
+    });
+
+  })(jQuery);
+</script>

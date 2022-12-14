@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './visiteur/home/home.component';
 import { LoginComponent } from './Admin/login/login.component';
 import { DasboardComponent } from './Admin/dasboard/dasboard.component';
 import { AcceuilComponent } from './Admin/dasboard/acceuil/acceuil.component';
@@ -16,13 +16,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './visiteur/navbar/navbar.component';
+import { VisiteurComponent } from './visiteur/visiteur.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     DasboardComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    NavbarComponent,
+    VisiteurComponent
 
   ],
   imports: [

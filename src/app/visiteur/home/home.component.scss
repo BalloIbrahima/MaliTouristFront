@@ -1,7 +1,8 @@
 .divmere{
-  margin: 0;
-  height: 99%;
-  width: 100%;
+  //margin: 0;
+  height: 100%;
+  margin: 3% 10% 0 10%;
+    //width: 100%;
   background-color: green;
 
 }
@@ -19,7 +20,7 @@
 // premiere partie .........................................................................................
 .firstPart{
   display: grid;
-  grid-template-rows: 45% 53%;
+  grid-template-rows: auto auto;
   row-gap: 2%;
 }
 
