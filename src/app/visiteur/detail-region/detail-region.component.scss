@@ -1,0 +1,75 @@
+.div_detail{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.entete{
+  margin: auto;
+}
+.entete_image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:23;
+}
+.img_article{
+  margin-top: 2%;
+  border-radius: 2%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.share_div{
+  position: initial;
+  top: 50%;
+  left: 10px;
+
+}
+
+.article_contenu{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.desciption{
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 900px){
+  .div_detail{
+      margin: 0%;
+  }
+
+  .h1{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: small;
+      font-size: 17px;
+      color: dimgrey;
+  }
+  .share_div{
+      position: initial;
+  }
+  .img_article{
+      max-height: 500px;
+      object-fit: cover;
+  }
+
+}
+
+@media (max-width: 900px){
+  .h2{
+      font-size: 1rem;
+  }
+  .img_article{
+      max-height: 300px;
+      object-fit: cover;
+  }
+
+  .div_commentaire{
+    padding: 5%;
+  }
+}

@@ -1,0 +1,68 @@
+<div class="div_detail">
+  <div class="entete">
+      <div class="entete_image">
+          <!--<<p><small class="text-muted">2/12/20022</small></p>-->
+          <img src="assets/images/mli10.jpeg" class="img-fluid img_article" alt="Image de l'article">
+          <p class="h2 font-weight-bold  entete_titre" innerHTML="Sikasso">La region de Sikasso</p>
+
+          <div class="desciption">
+            sdfghjkqwertyuiozxcvbnm qwertyuiop asdfghjkl zxcvbnm wertyuio asdfghjk
+          </div>
+          <!--<div class="share_div">
+              <share-buttons [include]="['facebook','twitter','linkedin','whatsapp','email']" [show]="3" [showText]="true" [tags]="'JSTM Mali'" [title]="titre" [image]="imgSrc"></share-buttons>
+              <- [theme]="'circles-dark'" ->
+          </div>-->
+      </div>
+  </div>
+  <p class="text-justify article_contenu" innerHTML="contenu"></p>
+
+
+  <!-- espace pour poster un commentaire -->
+  <div class="div_commentaire Form">
+      <form (ngSubmit)="posterCommentaire(poste_commentaire)" method="POST" #poste_commentaire="ngForm">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username" placeholder="Nom complet" required>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" [(ngModel)]="email" name="email" id="email" placeholder="Adresse email" required>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea type="description" class="form-control" [(ngModel)]="description" name="description" id="description" placeholder="Message" required>
+          </textarea>
+        </div>
+        <div class="form-floating mb-3">
+          <button  class="btn btn-success" [disabled]="poste_commentaire.form.invalid" >Envoyer</button>
+        </div>
+      </form>
+
+      <p style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size:20px;text-decoration: underline;font-size: unset;">Les commentaires</p>
+
+      <div class="les_commentaires">
+          <div style="box-shadow: 2px 0px 2px rgb(60, 93, 90)">
+              <div style="margin-bottom: 0px;">
+                  <label class="titre_discussion" style="font-size: medium; color: rgb(20, 20, 136); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 0px;">Nom de la personne</label>
+                  <label style="right:0px; margin-left: 5%;">il ya 15 minutes</label>
+              </div>
+              <div class="div_message" style="margin-top: 2px; ">
+                  <label class="message" style="font-size: small; font-family: Arial, Helvetica, sans-serif; padding: 2px; margin-left:4%">baba ballo cest ton commentaire</label>
+              </div>
+          </div>
+          <div class="dropdown-divider" style="color: orangered;"></div>
+
+          <!--a ignore-->
+          <div style="box-shadow: 2px 0px 2px rgb(60, 93, 90)">
+              <div style="margin-bottom: 0px;">
+                  <label class="titre_discussion" style="font-size: medium; color: rgb(20, 20, 136); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 0px;">Nom de la personne</label>
+                  <label style="right:0px; margin-left: 5%;">il ya 45 minutes</label>
+              </div>
+              <div class="div_message" style="margin-top: 2px; ">
+                  <label class="message" style="font-size: small; font-family: Arial, Helvetica, sans-serif; padding: 2px; margin-left:4%">un autre commentaire de la part de journaliste special</label>
+              </div>
+          </div>
+          <!---->
+      </div>
+
+  </div>
+</div>

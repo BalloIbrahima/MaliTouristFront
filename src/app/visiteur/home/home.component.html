@@ -6,7 +6,7 @@
         <div class="titreDescription">
           <div class="titre" >
             <label id="mali">Le MALI</label>
-          <label for="kankou moussa">En 1339, <a href="https://fr.wikipedia.org/wiki/Angelino_Dulcert">Angelino Dulcert</a>, cartographe de la très réputée école majorquine de cartographie, signale le Mali sur l'un des tout premiers portulans <a href="https://fr.wikipedia.org/wiki/Mali">connus10...</a><br>
+          <label id="textwiki" for="kankou moussa">En 1339, <a href="https://fr.wikipedia.org/wiki/Angelino_Dulcert">Angelino Dulcert</a>, cartographe de la très réputée école majorquine de cartographie, signale le Mali sur l'un des tout premiers portulans <a href="https://fr.wikipedia.org/wiki/Mali">connus10...</a><br>
             Le Pays de <b>Kankou Moussa ...</b></label>
           </div>
 
@@ -94,12 +94,105 @@
     </div>
 
     <div class="secaindPart">
-      <p>Avis </p>
-      <p>200 avis </p>
+      <p id="avisText" >Avis </p>
+      <p id="nbreAvis">200 avis </p>
 
+      <div class="listeAvis">
+        <!-- a maintenir-->
+
+        <div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div>
+
+        <!-- a maintenir-->
+
+        <div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div>
+
+        <div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div><div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div><div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div><div class="avis">
+          <label for="username" id="username">Ballo Ibrahima</label>
+          <div class="comment">
+            My country Mali is the best country on the world !
+          </div>
+        </div>
+        <!-- For delete-->
+
+      </div>
 
     </div>
   </div>
+
+  <hr id="first" >
+  <label>Les regions du Mali</label>
+  <hr id="last" >
+
+  <!--liste regions -->
+
+  <div class="card-deck" id="regions">
+    <div class="card" [routerLink]="['/home/region',1]">
+      <img src="assets/images/mli7.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/mli8.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kayes</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/mli11.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kayes</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/mli11.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kayes</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <!--liste regions -->
 
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->

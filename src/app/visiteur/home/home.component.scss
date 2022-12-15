@@ -80,14 +80,261 @@
 }
 
 .part2{
-  background-color:rgb(51, 107, 153) ;
+  background-color:rgb(255, 255, 255) ;
   padding: 5%;
 
 }
 // seconde partie .........................................................................................
 .secaindPart{
   // background-color: #D00822;
-  border-radius: 5px;
+  // border-radius: 5px;
   padding: 4%;
-  border: 2px solid #D00822;
+  border-left: 2px solid #9c9293;;
+  // border:
+  overflow: scroll;
+
 }
+
+.listeAvis{
+  max-height: max-content;
+}
+
+#avisText{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+}
+
+#nbreAvis{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.avis{
+  background-color: lightgray;
+  padding: 2%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.avis #username{
+  font-size: 20px;
+  font-weight: bold;
+}
+//
+#first{
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#last{
+  margin-top: 10px;
+
+   margin-bottom: 20px;
+}
+// liste regions
+.card-deck{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+// item
+.card{
+
+}
+.card > img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card > .card-body{
+  z-index: 999;
+  background-color: #ffffff87;
+}
+
+.card > .card-footer{
+  z-index: 999;
+  background-color: #4dac277e;
+}
+.text-muted{
+  color: #fff !important;
+}
+//media   screeb
+@media (max-width: 1200px) {
+  .content{
+
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none ;
+
+    row-gap: 2%;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .secaindPart[_ngcontent-rxi-c91] {
+    top: 10px;
+    padding: 4%;
+    margin-top: 20px;
+    border-left: 2px solid #9c9293;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 910px) {
+
+  .divmere{
+    //margin: 0;
+    height: 100%;
+    margin: 2% 3% 0 3%;
+    //width: 100%;
+    margin-bottom: 0;
+  }
+  // ///////.1.1 premiere ligne
+  .firstRow1{
+    flex-direction: column;
+    column-gap: 2%;
+  }
+}
+
+@media (max-width: 780px) {
+  .titreDescription{
+    display: grid;
+    grid-template-rows: 40% 55%;
+    row-gap: 5%;
+  }
+
+  #mali{
+    font-size: 40px;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  #description{
+   font-size: 14px;
+  }
+
+}
+
+@media (max-width: 690px) {
+  .titreDescription{
+    display: grid;
+    grid-template-rows: 40% 55%;
+    row-gap: 5%;
+  }
+
+  .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mali{
+    font-size: 30px;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  #textwiki{
+    font-size: 14px;
+  }
+  #description{
+   font-size: 12px;
+  }
+
+
+  .image{
+    border-radius: 15px;
+  }
+
+  .image > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  // ///////.1.2 deuxieme ligne
+  .secaindRow1{
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    column-gap: 2%;
+  }
+
+  .part1{
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+
+  }
+
+  .part2{
+    background-color:rgb(255, 255, 255) ;
+    padding: 5%;
+
+  }
+
+}
+
+@media (max-width: 590px) {
+  .firstRow1{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;
+  }
+  .titreDescription{
+    display: grid;
+    grid-template-rows: none;
+
+    grid-template-columns: 40% 55%;
+    row-gap: 5%;
+    margin-bottom: 10px;
+  }
+
+  .image > img{
+    height: 270px;;
+  }
+
+
+}
+
+@media (max-width: 530px) {
+
+  .titreDescription{
+    display: flex;
+    grid-template-columns: none;
+    row-gap: 5%;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .image > img{
+    height: 270px;;
+  }
+
+  // ///////.1.2 deuxieme ligne
+  .secaindRow1{
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    column-gap: 2%;
+  }
+
+  .part1{
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+
+  }
+
+  .part2{
+    background-color:rgb(255, 255, 255) ;
+    padding: 5%;
+
+  }
+}
+

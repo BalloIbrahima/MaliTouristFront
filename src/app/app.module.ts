@@ -18,6 +18,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './visiteur/navbar/navbar.component';
 import { VisiteurComponent } from './visiteur/visiteur.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { DetailRegionComponent } from './visiteur/detail-region/detail-region.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { VisiteurComponent } from './visiteur/visiteur.component';
     DasboardComponent,
     AcceuilComponent,
     NavbarComponent,
-    VisiteurComponent
+    VisiteurComponent,
+    DetailRegionComponent
 
   ],
   imports: [
@@ -40,6 +43,8 @@ import { VisiteurComponent } from './visiteur/visiteur.component';
     MatIconModule,
     MatDividerModule,
     FormsModule,
+    NgxPaginationModule
+
 
 
   ],
