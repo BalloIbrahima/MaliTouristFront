@@ -20,6 +20,8 @@ import { NavbarComponent } from './visiteur/navbar/navbar.component';
 import { VisiteurComponent } from './visiteur/visiteur.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { DetailRegionComponent } from './visiteur/detail-region/detail-region.component';
+import { HttpClientModule } from '@angular/common/http';
+import { httpInterceptorProviders } from './Helpers/http.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,12 +45,10 @@ import { DetailRegionComponent } from './visiteur/detail-region/detail-region.co
     MatIconModule,
     MatDividerModule,
     FormsModule,
-    NgxPaginationModule
-
-
-
+    NgxPaginationModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
