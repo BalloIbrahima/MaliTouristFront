@@ -24,20 +24,26 @@
       <mat-icon>home</mat-icon>
       <span>Acceuil</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/dashboard/profile">
-      <mat-icon>person</mat-icon>
-      <span>Profile</span>
+    <button mat-button class="menu-button" routerLink="/dashboard/regions">
+      <mat-icon>location_searching</mat-icon>
+      <span>Regions</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/dashboard//about">
-      <mat-icon>info</mat-icon>
-      <span>About</span>
+    <button mat-button class="menu-button" routerLink="/dashboard/admins">
+      <mat-icon>supervisor_account</mat-icon>
+      <span>Admin</span>
     </button>
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button" routerLink="/dashboard//help">
+    <!--<button mat-button class="menu-button" routerLink="/dashboard//help">
       <mat-icon>help</mat-icon>
       <span>Help</span>
+    </button>-->
+
+
+    <button mat-button class="menu-button" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <span>Deconnexion</span>
     </button>
   </mat-sidenav>
   <mat-sidenav-content>

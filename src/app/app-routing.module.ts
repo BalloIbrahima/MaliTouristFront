@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AcceuilComponent } from './Admin/dasboard/acceuil/acceuil.component';
-import { DasboardComponent } from './Admin/dasboard/dasboard.component';
+import { AcceuilComponent } from './Admin/dashboard/acceuil/acceuil.component';
+import { DasboardComponent } from './Admin/dashboard/dasboard.component';
+import { ListeAdminComponent } from './Admin/dashboard/liste-admin/liste-admin.component';
+import { RegionsComponent } from './Admin/dashboard/regions/regions.component';
 import { LoginComponent } from './Admin/login/login.component';
 import { DashboardGuard } from './Guard/dasboard/dashboard.guard';
 import { DetailRegionComponent } from './visiteur/detail-region/detail-region.component';
@@ -20,6 +22,9 @@ const routes: Routes = [
   {path: "dashboard",component:DasboardComponent,canActivate:[DashboardGuard],
     children:[
       {path:"home",component:AcceuilComponent},
+      {path:"admins",component:ListeAdminComponent},
+
+      {path:"regions",component:RegionsComponent},
 
       {path: "", redirectTo:"home",pathMatch:'full'  },
       {path: "**", redirectTo:"home",pathMatch:'full'  },

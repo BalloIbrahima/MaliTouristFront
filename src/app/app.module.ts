@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './visiteur/home/home.component';
 import { LoginComponent } from './Admin/login/login.component';
-import { DasboardComponent } from './Admin/dasboard/dasboard.component';
-import { AcceuilComponent } from './Admin/dasboard/acceuil/acceuil.component';
+import { DasboardComponent } from './Admin/dashboard/dasboard.component';
+import { AcceuilComponent } from './Admin/dashboard/acceuil/acceuil.component';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +22,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { DetailRegionComponent } from './visiteur/detail-region/detail-region.component';
 import { HttpClientModule } from '@angular/common/http';
 import { httpInterceptorProviders } from './Helpers/http.interceptor';
+import { ListeAdminComponent } from './Admin/dashboard/liste-admin/liste-admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { httpInterceptorProviders } from './Helpers/http.interceptor';
     AcceuilComponent,
     NavbarComponent,
     VisiteurComponent,
-    DetailRegionComponent
+    DetailRegionComponent,
+    ListeAdminComponent
 
   ],
   imports: [

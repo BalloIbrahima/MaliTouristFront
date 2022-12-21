@@ -21,9 +21,9 @@
               <input type="password" class="form-control" [(ngModel)]="password" name="password" id="password" placeholder="Password" required>
             </div>
 
-            <!--<div class="form-floating mb-3">
-              <a>Mots de passe oublie ?</a>
-            </div> -->
+            <label id="erreur" *ngIf="Iserror">{{erreur}}</label>
+
+
 
             <div class="form-floating mb-3">
               <button  class="btn btn-success" [disabled]="f2.form.invalid" (click)="login(f2)">Login</button>
