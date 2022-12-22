@@ -24,7 +24,11 @@ export class LoginComponent  implements OnInit{
   ngOnInit(): void {
     //if
     //throw new Error('Method not implemented.');
-    console.log(this.tokenStorage.getUser())
+    if(this.tokenStorage.getUser().data){
+    //   console.log(this.tokenStorage.getUser().data)
+
+      this.router.navigate(['/dashboard'])
+    }
   }
 
 

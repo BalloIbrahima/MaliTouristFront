@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
 import { delay, filter } from 'rxjs/operators';
@@ -12,13 +12,19 @@ import { AdminService } from 'src/app/Service/Admin/admin.service';
   templateUrl: './dasboard.component.html',
   styleUrls: ['./dasboard.component.scss']
 })
-export class DasboardComponent {
+export class DasboardComponent  implements OnInit{
 
 
+  admin:any
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
 
-  constructor(private observer: BreakpointObserver, private router: Router, private tokenService:TokenService, private adminService:AdminService) {}
+  constructor(private tokenStorage: TokenService,private observer: BreakpointObserver, private router: Router, private tokenService:TokenService, private adminService:AdminService) {}
+  ngOnInit(): void {
+    //throw new Error('Method not implemented.');
+    this.admin=this.tokenStorage.getUser().data
+    //console.log(this.admin)
+  }
 
   ngAfterViewInit() {
     this.observer

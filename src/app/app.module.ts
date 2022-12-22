@@ -23,6 +23,7 @@ import { DetailRegionComponent } from './visiteur/detail-region/detail-region.co
 import { HttpClientModule } from '@angular/common/http';
 import { httpInterceptorProviders } from './Helpers/http.interceptor';
 import { ListeAdminComponent } from './Admin/dashboard/liste-admin/liste-admin.component';
+import { NewAdminComponent } from './Admin/dashboard/new-admin/new-admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { ListeAdminComponent } from './Admin/dashboard/liste-admin/liste-admin.c
     NavbarComponent,
     VisiteurComponent,
     DetailRegionComponent,
-    ListeAdminComponent
+    ListeAdminComponent,
+    NewAdminComponent
 
   ],
   imports: [

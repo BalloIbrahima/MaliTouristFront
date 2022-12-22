@@ -1,0 +1,48 @@
+<div>
+  <div class="form">
+    <div class="form-toggle"></div>
+    <div class="form-panel one">
+      <div class="form-header" >
+        <h1>Creer un admin</h1>
+      </div>
+      <div class="form-content">
+        <form action="" method="post" #f2="ngForm">
+          <div class="form">
+            <div class="form-floating mb-3">
+              <label>Veuillez remseigner les informations suivantes pour creer un nouveau administrateur !</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" [(ngModel)]="nom" name="nom" id="nom" placeholder="nom" required>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" [(ngModel)]="prenom" name="prenom" id="prenom" placeholder="prenom" required>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" [(ngModel)]="password" name="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" [(ngModel)]="Confirmpassword" name="Confirmpassword" id="Confirmpassword" placeholder="Confirmation Password" required>
+            </div>
+
+            <label id="erreur" *ngIf="Iserror">{{erreur}}</label>
+
+
+
+            <div class="form-floating mb-3">
+              <button  class="btn btn-success" [disabled]="f2.form.invalid" (click)="newAdmin(f2)">Ajouter</button>
+            </div>
+          </div>
+
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
