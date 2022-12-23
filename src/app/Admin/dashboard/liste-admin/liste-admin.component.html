@@ -1,6 +1,67 @@
 <div class="container">
   <div class="left">
+    <div class="order-content">
+      <div class="card customers-cd">
+          <div class="card-body">
+              <h5 class="card-title text-center fw-bold fs-4 mb-0">Liste des agents</h5>
+          </div>
+      </div>
+      <div class="card table">
+          <div class="card-body py-0 px-3 pb-3">
+              <div class="customers">
+                  <div class="customer fw-bold">
+                      <div class="cst-name">Nom et prénom</div>
+                      <div class="cst-id">username</div>
+                      <div class="cst-market">Role</div>
+                      <!-- <div class="cst-num">N°Agent</div>
+                      <div class="cst-sector">Secteur</div>
+                      <div class="cst-action">Action</div> -->
+                  </div>
+                  <!-- La partie qui sera dans la boucle  -->
+                  <div class="customer" *ngFor="let a of lesAdmins | paginate:{itemsPerPage:8, currentPage:a}">
+                      <div class="cst-name">
+                          <span class="r_name">{{a.prenom}} {{a.nom}}</span><br>
+                      </div>
+                      <div class="cst-id">{{a.username}}</div>
+                      <div class="cst-id">
+                        <span class="r_name" *ngFor="let r of a.roles">{{r.name}}</span><br>
 
+                      </div>
+
+                     <!-- <div class="cst-market">{{a.dateNaissance | date : 'dd-MM-YYYY'}}</div>
+                  div class="cst-num">{{a.agent.numero}}</div>
+                      <div class="cst-sector">{{c.adresse}}</div>
+                        <div class="cst-action" data-bs-toggle="modal" data-bs-target="#modiclientModal">
+                          <button class="button" (click)="modif(c)">Modifier</button>
+                      </div>-->
+                  </div>
+                  <!-- Fin de la partie qui sera dans la boucle  -->
+
+                  <!-- La partie à supprimer  -->
+                  <!--
+                  <div class="customer">
+                      <div class="cst-name">
+                          <span class="r_name">Mamadou Coulibaly</span><br>
+                          <span class="r_name">+223 70-00-00-00</span>
+                      </div>
+                      <div class="cst-id">80</div>
+                      <div class="cst-market">01/01/2022</div>
+                      <div class="cst-num">35</div>
+                      <div class="cst-sector">Secteur</div>
+                      <div class="cst-action">
+                          <button class="button">Modifier</button>
+                      </div>
+                  </div> -->
+                  <!-- Fin de la partie à supprimer  -->
+                  <div class="pagination">
+                    <pagination-controls (pageChange)="a = $event" nextLabel="Suivants" previousLabel="Précédents" [responsive]="responsive">
+
+                    </pagination-controls>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
   </div>
 
   <div class="rigth">

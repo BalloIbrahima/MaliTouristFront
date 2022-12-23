@@ -27,7 +27,8 @@ export class AdminService {
 
 
   create(admin:any):Observable<any>{
-    return this.http.post(`${this.env.api}/admin/create`,admin,httpOptions);
+
+    return this.http.post(`${this.env.api}/admin/creer`,admin,httpOptions);
   }
 
   //liste des admins

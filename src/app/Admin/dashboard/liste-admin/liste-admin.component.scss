@@ -10,7 +10,11 @@
 
 .left{
 
-  background-color: rgb(33, 65, 94);
+  // //background-color: rgb(33, 65, 94);
+  // display: flex;
+  // align-items: center;
+  // border: 5px solid #0AB736;
+  //border-radius: 10px;
 }
 
 .rigth{
@@ -20,4 +24,290 @@
   border: 5px solid #FCD211;
   border-radius: 10px;
 
+}
+
+///////////////////////////////
+@at-root.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0AB736;
+}
+.table_header p{
+    color: #000000;
+}
+.table_section{
+    max-height: 650px;
+    overflow-y: auto;
+}
+/* width */
+.table_section::-webkit-scrollbar {
+    width: 5px!important;
+
+}
+/* Track */
+.table_section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle */
+.table_section::-webkit-scrollbar-thumb {
+    background: #9dc75b;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.table_section::-webkit-scrollbar-thumb:hover {
+    background: #0AB736;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: 1px collapse;
+    margin-top: 5px;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.table> :not(:first-child) {
+    border-top: 0px solid currentColor;
+
+}
+.table tbody tr:last-child td {
+    border-width: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #000;
+    font-size: 15px;
+}
+button.status {
+    background: #83C22B;
+    border-radius: 35px;
+    border-color: #83C22B;
+    color: #f6f9fc;
+}
+button.mdf {
+    background: #D9AD14;
+    border-radius: 35px;
+    border-color: #D9AD14;
+    color: #f6f9fc;
+}
+th.td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+thead, tbody, tfoot, tr, td, th {
+    border-color: whitesmoke;
+    border-style: outset;
+}
+td img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ced0d2;
+}
+td np{
+    margin-right: 20px;
+}
+tr:hover td{
+    color: #71e710;
+    background-color: #f6f9fc;
+    cursor: pointer;
+}
+::placeholder{
+    color: #8899a0;
+}
+
+.spc{
+    display: flex;
+}
+
+.c-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.cd{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    font-size: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #fff;
+
+}
+.cd:nth-child(1){
+    margin-right: 15px;
+
+}
+.cd:nth-child(2){
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.cd:nth-child(3){
+    margin-left: 15px;
+    cursor: pointer;
+}
+.ctn{
+    height: 100%;
+    background: #83C22B;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+}
+button.b-ct {
+    background: border-box;
+    border: none;
+    color: #ffffff;
+}
+.cd-text{
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.cd-left{
+    text-align: center;
+}
+.cd-left, .ctn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cd i.material-icons{
+    font-size: 64px;
+}
+.ctn-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2rem;
+}
+.customers-cd{
+    background-color: #0AB736;
+    font-weight: bold;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    width: calc(100% - 15px);
+    z-index: 3;
+    border-color: #0AB736;
+}
+.customers-cd h5{
+    color: #fff;
+}
+.card.table{
+    margin-top: -30px;
+    padding-top: 40px;
+}
+.customer{
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+}
+.cst-name{
+    width: 25%;
+}
+.cst-id{
+    width: 15%;
+}
+.cst-market{
+    width: 15%;
+}
+.cst-num{
+    width: 15%;
+}
+.cst-num{
+    width: 15%;
+}
+.cst-sector{
+    width: 15%;
+}
+.cst-action{
+    width: 15%;
+}
+.cst-action .button{
+    text-decoration: none;
+    color: #fff;
+    background: #d9ad14;
+    padding: 2px 8px;
+    border-radius: 1.35rem;
+    border: none;
+}
+#modiclientModal .modal-dialog{
+    max-width: 80%;
+    width: 700px;
+}
+#addclientModal .modal-dialog{
+    max-width: 80%;
+    width: 700px;
+}
+.left-form{
+    width: calc(100% - 300px);
+    margin-right: 30px;
+}
+
+@media (max-width: 886px) {
+  .container{
+    display: grid;
+    grid-template-columns:none ;
+    grid-template-rows: auto auto;
+    column-gap: 5%;
+    height: 100%;
+    //width: 100%;
+    margin: 0;
+    margin-right: 0;
+  }
+
+  .card.table .card-body{
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+    .c-card{
+        flex-direction: column;
+    }
+    .c-card > div{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .cd-left i{
+        display: none;
+    }
+    .cd-left{
+        padding: 30px 0;
+    }
+    .ctn{
+        padding: 40px 0;
+    }
+    .order-content {
+        padding-bottom: 1rem;
+    }
+    .card.table{
+        overflow: scroll;
+    }
+    .card.table .card-body{
+        width: max-content;
+    }
 }

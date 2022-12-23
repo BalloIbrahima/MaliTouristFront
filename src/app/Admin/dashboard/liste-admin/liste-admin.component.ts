@@ -8,6 +8,8 @@ import { AdminService } from 'src/app/Service/Admin/admin.service';
 })
 export class ListeAdminComponent implements OnInit {
 
+  a!:any;
+  responsive = true;
   lesAdmins:any
   constructor(private adminService:AdminService){}
 
@@ -16,7 +18,7 @@ export class ListeAdminComponent implements OnInit {
     //recuperer la liste des admins
     this.adminService.listeAdmin().subscribe(data=>{
       console.log(data)
-      this.lesAdmins=data
+      this.lesAdmins=data.data
     })
     throw new Error('Method not implemented.');
   }
